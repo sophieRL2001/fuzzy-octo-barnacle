@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSync - Welcome & Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to FitSync!</h1>
+        <p>Let's personalize your fitness journey. Please tell us a bit about yourself.</p>
+    
+
+        <form action="dashboard.html" method="get"> 
+            <fieldset>
+                <legend>Basic Personal Info</legend>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select...</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="prefer_not">Prefer not to say</option>
+                </select>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height">
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight">
+            </fieldset>
+
+            <fieldset>
+                <legend>Lifestyle & Activity</legend>
+                 <label for="activity_level">Current Activity Level:</label>
+                <select id="activity_level" name="activity_level">
+                    <option value="">Select...</option>
+                    <option value="sedentary">Sedentary (little to no exercise)</option>
+                    <option value="light">Lightly Active (light exercise/sports 1-3 days/week)</option>
+                    <option value="moderate">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+                    <option value="very">Very Active (hard exercise/sports 6-7 days a week)</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fitness Preferences</legend>
+                <label>Preferred Exercise Types (select all that apply):</label>
+                <input type="checkbox" id="pref_cardio" name="prefs" value="cardio"> <label for="pref_cardio">Cardio (running, cycling)</label><br>
+                <input type="checkbox" id="pref_strength" name="prefs" value="strength"> <label for="pref_strength">Strength Training (weights, bodyweight)</label><br>
+                <input type="checkbox" id="pref_flexibility" name="prefs" value="flexibility"> <label for="pref_flexibility">Flexibility (yoga, stretching)</label><br>
+                <input type="checkbox" id="pref_other" name="prefs" value="other"> <label for="pref_other">Other</label><br>
+
+                <label for="environment">Preferred Environment:</label>
+                <select id="environment" name="environment">
+                    <option value="">Select...</option>
+                    <option value="home">Home</option>
+                    <option value="gym">Gym</option>
+                    <option value="outdoors">Outdoors</option>
+                </select>
+
+                <label for="duration">Preferred Workout Duration (minutes):</label>
+                <input type="number" id="duration" name="duration" placeholder="e.g., 30">
+            </fieldset>
+
+            <fieldset>
+                <legend>Health & Wellness</legend>
+                <label for="injuries">Any current injuries or limitations?</label>
+                <textarea id="injuries" name="injuries" rows="3" placeholder="e.g., Knee pain when running, limited shoulder mobility"></textarea>
+
+                <label for="stress_level">Typical Stress Level:</label>
+                <select id="stress_level" name="stress_level">
+                    <option value="">Select...</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                 <label for="encouragement">Preferred Encouragement Style:</label>
+                <select id="encouragement" name="encouragement">
+                    <option value="">Select...</option>
+                    <option value="gentle">Gentle Nudges</option>
+                    <option value="direct">Direct & Informative</option>
+                    <option value="celebratory">Celebratory</option>
+                </select>
+            </fieldset>
+
+             <fieldset>
+                <legend>Goals & Scheduling</legend>
+                <label for="goals">Primary Fitness Goal:</label>
+                <select id="goals" name="goals">
+                    <option value="">Select...</option>
+                    <option value="get_active">Become more active / Build a habit</option>
+                    <option value="lose_weight">Lose weight</option>
+                    <option value="build_strength">Build strength</option>
+                    <option value="improve_endurance">Improve endurance</option>
+                    <option value="reduce_stress">Reduce stress / Improve well-being</option>
+                    <option value="maintain">Maintain current level</option>
+                </select>
+
+                <label for="frequency">How many days per week can you commit?</label>
+                <input type="number" id="frequency" name="frequency" min="1" max="7">
+
+                <label for="availability">Best times/days for workouts?</label>
+                <textarea id="availability" name="availability" rows="2" placeholder="e.g., Weekday mornings, Weekend afternoons"></textarea>
+            </fieldset>
+
+            <a href="dashboard.html" class="button">Create My Plan & Go to Dashboard</a>
+            <!-- In a real app, this button would submit the form -->
+        </form>
+    </div>
+</body>
+</html>

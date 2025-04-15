@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSync - Today's Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Today's Workout: Gentle Movement & Flexibility</h1>
+        <p>Remember to listen to your body. Modify or stop if you feel pain. Focus on smooth movements.</p>
+
+        <h2>Workout Steps:</h2>
+        <ul>
+            <li><strong>Warm-up (5 min):</strong> Gentle neck rolls, shoulder circles, arm swings.</li>
+            <li><strong>Cat-Cow Stretch (10 reps):</strong> Focus on spinal mobility.</li>
+            <li><strong>Child's Pose (Hold 1 min):</strong> Relax and breathe deeply.</li>
+            <li><strong>Seated Forward Fold (Hold 1 min):</strong> Gentle hamstring stretch.</li>
+            <li><strong>Light Walk (10 min):</strong> Indoors or outdoors, maintain a comfortable pace.</li>
+            <li><strong>Cool-down (3 min):</strong> Deep breathing exercises.</li>
+        </ul>
+
+        <div class="placeholder">[Optional: Placeholder for simple animation/video guide for each exercise]</div>
+
+        <hr style="margin: 30px 0;">
+
+        <h2>Workout Feedback (Honor System)</h2>
+        <p>How did it go? Your feedback helps us adapt future plans.</p>
+        <form action="dashboard.html" method="get"> <!-- Navigate back for prototype -->
+            <div>
+                <input type="radio" id="feedback_done" name="feedback_status" value="done" checked>
+                <label for="feedback_done">Completed as planned</label>
+            </div>
+            <div>
+                <input type="radio" id="feedback_modified" name="feedback_status" value="modified">
+                <label for="feedback_modified">Completed with modifications</label>
+            </div>
+             <div>
+                <input type="radio" id="feedback_partial" name="feedback_status" value="partial">
+                <label for="feedback_partial">Partially completed / Skipped some parts</label>
+            </div>
+            <div>
+                <input type="radio" id="feedback_skipped" name="feedback_status" value="skipped">
+                <label for="feedback_skipped">Skipped workout</label>
+            </div>
+
+            <label for="feedback_notes" style="margin-top: 15px;">Any challenges, feelings, or notes?</label>
+            <textarea id="feedback_notes" name="feedback_notes" rows="4" placeholder="e.g., Felt really good and relaxed afterwards! / My back felt a bit stiff during Cat-Cow. / Didn't have time for the walk."></textarea>
+
+            <a href="dashboard.html" class="button">Save Feedback & Return to Dashboard</a>
+             <!-- In a real app, this button would submit the feedback -->
+        </form>
+    </div>
+</body>
+</html>
